@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.1/CC.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -19,6 +19,7 @@
                 "windows": {
                     "command": "cmd.exe",
                     "args": "/C start \"\" \"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\" ${auto-detect-url}"
+                }
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
@@ -27,6 +28,5 @@
                 "/Views": "${workspaceFolder}/Views"
             }
         }
-
     ]
 }
